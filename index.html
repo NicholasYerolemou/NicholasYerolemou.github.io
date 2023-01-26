@@ -1,8 +1,33 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1" width="device-width">
+        <title>
+            Instagram followers tracker
+        </title>
+    </head>
+
+    <script>
+
+        function signIn()
+        {
+            window.open("http://www.google.com/");
+        }
+    </script>
+
+
+   
 <body>
     Hello world
+    <button onclick="signIn()">Sign in</button>
+    
+<!-- 
+    https://api.instagram.com/oauth/authorize
+  ?client_id={app-id}
+  &redirect_uri={redirect-uri}
+  &scope=user_profile,user_media
+  &response_type=code -->
 </body>
 
 </html>
