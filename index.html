@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="initial-scale=1" width="device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Happy 23rd Birthday Cenelle</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
-    <div class="header">
-        <h1>Happy 23rd Birthday</h1>
+    <div class="sidebar">
+        <a href="#part1">1</a>
+        <a href="#part2">2</a>
+        <a href="#part3">3</a>
+        <a href="#part4">4</a>
+        <a href="#part5">5</a>
     </div>
-    <p>Test</p>
+    <div class="content">
+        <!-- Header -->
+        <header class="text-center bg-warning p-5 rounded mb-4">
+            <h1 class="display-4">Happy 23rd Birthday</h1>
+        </header>
+
+        <!-- Containers with Subtitles -->
+        <div class="container" id="part1">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-light p-4 rounded mb-4">
+                        <h2>Part 1</h2>
+                        <!-- Content for Part 1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="part2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-light p-4 rounded mb-4">
+                        <h2>Part 2</h2>
+                        <!-- Content for Part 2 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="part3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-light p-4 rounded mb-4">
+                        <h2>Part 3</h2>
+                        <!-- Content for Part 3 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="part4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-light p-4 rounded mb-4">
+                        <h2>Part 4</h2>
+                        <!-- Content for Part 4 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="part5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-light p-4 rounded mb-4">
+                        <h2>Part 5</h2>
+                        <!-- Content for Part 5 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- Additional content here -->
+        </main>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        // Function to handle smooth scrolling for all buttons
+        document.querySelectorAll('.sidebar a').forEach(function(button, index) {
+            button.addEventListener('click', function() {
+                var sectionId = 'part' + (index + 1);
+                document.querySelector('#' + sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
