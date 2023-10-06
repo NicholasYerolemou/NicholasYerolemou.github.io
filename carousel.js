@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel");
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
-    const slideWidth = carousel.querySelector(".slide").offsetWidth;
+    const carousel = document.querySelector("#carousel_3");
+    const prevButton = document.querySelector("#prev_3");
+    const nextButton = document.querySelector("#next_3");
+    const slideWidth = carousel.querySelector("#slide_3").offsetWidth;
     let currentSlide = 0;
 
     function goToSlide(slideIndex) {
