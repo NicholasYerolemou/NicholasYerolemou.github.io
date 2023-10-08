@@ -1,4 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector("#carousel_2");
+    const prevButton = document.querySelector("#prev_2");
+    const nextButton = document.querySelector("#next_2");
+    const slideWidth = carousel.querySelector("#slide_2").offsetWidth;
+    let currentSlide = 0;
+
+    function goToSlide(slideIndex) {
+        if (slideIndex < 0) {
+            slideIndex = 0;
+        } else if (slideIndex > carousel.childElementCount - 4) {
+            slideIndex = carousel.childElementCount - 4;
+        }
+        currentSlide = slideIndex;
+        const translateX = -slideIndex * slideWidth;
+        carousel.style.transform = `translateX(${translateX}px)`;
+    }
+
+    prevButton.addEventListener("click", () => {
+        goToSlide(currentSlide - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+        goToSlide(currentSlide + 1);
+    });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector("#carousel_3");
     const prevButton = document.querySelector("#prev_3");
     const nextButton = document.querySelector("#next_3");
